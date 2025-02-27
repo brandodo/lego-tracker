@@ -15,7 +15,7 @@ export const getProductsList = async (req, res) => {
       order 
     });
 
-    res.json({
+    res.status(200).json({
       status: 'success',
       data: products,
       pagination: {
@@ -46,7 +46,7 @@ export const getProduct = async (req, res) => {
       });
     }
 
-    res.json({
+    res.status(200).json({
       status: 'success',
       data: product
     });
