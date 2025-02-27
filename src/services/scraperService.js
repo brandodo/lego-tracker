@@ -21,9 +21,7 @@ export const scrapeProducts = async () => {
     logger.info("Starting product scrape");
 
     for (let i = 1; i <= totalPages; i++) {
-      await page.goto(
-        `https://www.lego.com/en-ca/categories/all-sets?page=${i}`
-      );
+      await page.goto(`${BASE_URL}?page=${i}`);
       await page.waitForSelector('[data-test="product-item"]');
 
       const products = await page.$$eval('[data-test="product-item"]', (sets) =>
