@@ -1,0 +1,24 @@
+{
+  "name": "lego-scraper",
+  "version": "1.0.0",
+  "description": "Data scraper for Legos",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon --legacy-watch --watch index.js"
+  },
+  "author": "Brandon O.",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.3",
+    "puppeteer": "^24.2.0"
+  },
+  "devDependencies": {
+    "node-cron": "^3.0.3",
+    "nodemon": "^3.1.9"
+  }
+}
